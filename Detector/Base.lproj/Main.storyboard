@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Detector" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ez0-Mx-cKH">
+                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="XsP-v4-JpE">
+                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sJQ-wY-T0K">
+                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                                <connections>
+                                    <action selector="tapSafeArea:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sSP-3J-vG4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="XsP-v4-JpE" secondAttribute="bottom" id="4Kd-BR-3oJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ez0-Mx-cKH" secondAttribute="bottom" id="5oj-Op-Nco"/>
+                            <constraint firstItem="ez0-Mx-cKH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ngi-1i-T3g"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sJQ-wY-T0K" secondAttribute="bottom" id="WyE-pi-DIu"/>
+                            <constraint firstItem="sJQ-wY-T0K" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="YZv-gW-m0B"/>
+                            <constraint firstItem="XsP-v4-JpE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Z9c-Xl-any"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XsP-v4-JpE" secondAttribute="trailing" id="d08-OW-XA1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ez0-Mx-cKH" secondAttribute="trailing" id="faQ-vW-nHy"/>
+                            <constraint firstItem="sJQ-wY-T0K" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jP7-G6-Kcd"/>
+                            <constraint firstItem="XsP-v4-JpE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="pn3-e9-7SY"/>
+                            <constraint firstItem="ez0-Mx-cKH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="spK-gz-fen"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sJQ-wY-T0K" secondAttribute="trailing" id="svs-dE-313"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="buttonView" destination="sJQ-wY-T0K" id="ThZ-qC-fnd"/>
+                        <outlet property="imageView" destination="ez0-Mx-cKH" id="8WB-Gz-bRm"/>
+                        <outlet property="textView" destination="XsP-v4-JpE" id="eAy-zx-wuk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
